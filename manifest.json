@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Simple UA Switcher",
+  "version": "1.0.1",
+  "description": "The easiest way to switch your UA / UA를 바꾸는 가장 쉬운 방법!",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "activeTab",
+    "<all_urls>"
+  ],
+  "icons": {
+	"48": "icon48.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "icon48.png",
+      "32": "icon48.png"
+    },
+    "default_title": "Set User-Agent",
+    "theme_icons": [{
+       "light": "icon48.png",
+       "dark": "icon48.png",
+       "size": 16
+    }, {
+       "light": "icon48.png",
+       "dark": "icon48.png",
+       "size": 32
+  }]
+ }
+}
